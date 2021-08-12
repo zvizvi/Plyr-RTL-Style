@@ -1,0 +1,52 @@
+.plyr .plyr__controls .plyr__menu__container {
+  direction: rtl;
+}
+
+.plyr .plyr__controls .plyr__menu__container .plyr__control--forward {
+  padding-right: calc(calc(10px * .7) * 1.5);
+  padding-right: calc(calc(var(--plyr-control-spacing, 10px) * .7) * 1.5);
+  padding-left: calc(calc(10px * .7) * 4);
+  padding-left: calc(calc(var(--plyr-control-spacing, 10px) * .7) * 4);
+}
+
+.plyr .plyr__controls .plyr__menu__container .plyr__control--forward::after {
+  right: auto;
+  left: calc((calc(10px * .7) * 1.5) - 4px);
+  left: calc((calc(var(--plyr-control-spacing, 10px) * .7) * 1.5) - var(--plyr-menu-item-arrow-size, 4px));
+  border-left-color: transparent;
+  border-right-color: #728197;
+  border-right-color: var(--plyr-menu-arrow-color, #728197);
+}
+
+.plyr .plyr__controls .plyr__menu__container .plyr__menu__value {
+  margin-right: auto;
+  margin-left: calc((calc(10px * .7) - 2) * -1);
+  margin-left: calc((calc(var(--plyr-control-spacing, 10px) * .7) - 2) * -1);
+  padding-left: 0;
+  padding-left: unset;
+  padding-right: calc(calc(10px * .7) * 3.5);
+  padding-right: calc(calc(var(--plyr-control-spacing, 10px) * .7) * 3.5);
+}
+
+.plyr .plyr__controls .plyr__menu__container .plyr__control--back {
+  padding-left: 0;
+  padding-left: unset;
+  padding-right: calc(calc(10px * .7) * 4);
+  padding-right: calc(calc(var(--plyr-control-spacing, 10px) * .7) * 4);
+}
+
+.plyr .plyr__controls .plyr__menu__container .plyr__control--back::after {
+  border-right-color: transparent;
+  border-left-color: #728197;
+  border-left-color: var(--plyr-menu-arrow-color, #728197);
+  left: auto;
+  right: calc((calc(10px * .7) * 1.5) - 4px);
+  right: calc((calc(var(--plyr-control-spacing, 10px) * .7) * 1.5) - var(--plyr-menu-item-arrow-size, 4px));
+}
+
+.plyr .plyr__controls .plyr__menu__container .plyr__control[role=menuitemradio]::before {
+  margin-right: 0;
+  margin-right: unset;
+  margin-left: 10px;
+  margin-left: var(--plyr-control-spacing, 10px);
+}
